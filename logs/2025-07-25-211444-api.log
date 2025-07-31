@@ -1,0 +1,132 @@
+2025-07-25 21:14:44.150 [SessionManager+Reactive.swift:56] API📩|call to: /v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a|
+2025-07-25 21:14:44.152 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-25 21:14:44.155 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-25 21:14:44.158 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -98202.15814495087|
+2025-07-25 21:14:45.800 [SessionManager+Reactive.swift:56] API📩|call to: /v1/auth/renew|
+2025-07-25 21:14:45.801 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-25 21:14:45.802 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-25 21:14:45.802 [UserTokenRequestAdapter.swift:52] API📩|Adapt request with refresh token: isExpired false expireAfter 27392239.19779098|
+2025-07-25 21:14:46.105 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/auth/renew [with value: 200]|
+2025-07-25 21:14:46.166 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-25 21:14:46.167 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-25 21:14:46.168 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.832365989685|
+2025-07-25 21:14:46.514 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a [with value: 409]|
+2025-07-26 03:14:43.118 [SessionManager+Reactive.swift:56] API📩|call to: /v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a|
+2025-07-26 03:14:43.120 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 03:14:43.122 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 03:14:43.124 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -14397.124112010002|
+2025-07-26 03:14:43.412 [SessionManager+Reactive.swift:56] API📩|call to: /v1/account/users/public-keys/validate|
+2025-07-26 03:14:43.419 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 03:14:43.420 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 03:14:43.421 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -14397.420933961868|
+2025-07-26 03:14:44.039 [SessionManager+Reactive.swift:56] API📩|call to: /v1/auth/renew|
+2025-07-26 03:14:44.040 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 03:14:44.040 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 03:14:44.041 [UserTokenRequestAdapter.swift:52] API📩|Adapt request with refresh token: isExpired false expireAfter 27370640.959269047|
+2025-07-26 03:14:44.323 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/auth/renew [with value: 200]|
+2025-07-26 03:14:44.383 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 03:14:44.385 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 03:14:44.385 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.614577054977|
+2025-07-26 03:14:44.432 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 03:14:44.433 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 03:14:44.434 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.565976023674|
+2025-07-26 03:14:44.620 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a [with value: 409]|
+2025-07-26 03:14:44.701 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/account/users/public-keys/validate [with value: 200]|
+2025-07-26 07:52:59.093 [SessionManager+Reactive.swift:56] API📩|call to: /v3/server/suggest/bundle|
+2025-07-26 07:52:59.099 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 07:52:59.123 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -9495.123154044151|
+2025-07-26 07:52:59.888 [SessionManager+Reactive.swift:56] API📩|call to: /v1/auth/renew|
+2025-07-26 07:52:59.889 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 07:52:59.889 [UserTokenRequestAdapter.swift:52] API📩|Adapt request with refresh token: isExpired false expireAfter 27353945.110911965|
+2025-07-26 07:53:00.174 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/auth/renew [with value: 200]|
+2025-07-26 07:53:00.294 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 07:53:00.296 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.703755021095|
+2025-07-26 07:53:00.891 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v3/server/suggest/bundle [with value: 200]|
+2025-07-26 10:13:15.427 [SessionManager+Reactive.swift:56] API📩|call to: /v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a|
+2025-07-26 10:13:15.434 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 10:13:15.438 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 10:13:15.441 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -1215.4405740499496|
+2025-07-26 10:13:16.451 [SessionManager+Reactive.swift:56] API📩|call to: /v1/auth/renew|
+2025-07-26 10:13:16.454 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 10:13:16.455 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 10:13:16.455 [UserTokenRequestAdapter.swift:52] API📩|Adapt request with refresh token: isExpired false expireAfter 27345528.544621944|
+2025-07-26 10:13:16.731 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/auth/renew [with value: 200]|
+2025-07-26 10:13:16.788 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 10:13:16.789 [SUSecurityStack.swift:69] API📩|Fetch token [with value: fetch token when protected data is not available]|
+2025-07-26 10:13:16.790 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.210472941399|
+2025-07-26 10:13:17.033 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v2/proposal/onboarding/83738541-f6e0-4e47-809f-45d03be59509?group=onboarding_test_137_a [with value: 409]|
+2025-07-26 17:16:24.900 [SessionManager+Reactive.swift:56] API📩|call to: /v2/notification/me|
+2025-07-26 17:16:24.910 [SessionManager+Reactive.swift:56] API📩|call to: /v1/account/users/me|
+2025-07-26 17:16:24.911 [SessionManager+Reactive.swift:56] API📩|call to: /v1/payment/subscriptions/current|
+2025-07-26 17:16:24.923 [SessionManager+Reactive.swift:56] API📩|call to: /v1/identity/altid/profile|
+2025-07-26 17:16:24.924 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/feedback/|
+2025-07-26 17:16:24.925 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/app-rate|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:24.979 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.002514004707|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.002589941025|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.00268304348|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.00269794464|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.002750992775|
+2025-07-26 17:16:25.003 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.00278699398|
+2025-07-26 17:16:25.632 [SessionManager+Reactive.swift:56] API📩|call to: /v1/notification/authorization|
+2025-07-26 17:16:25.633 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:25.635 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired true expireAfter -18189.63487803936|
+2025-07-26 17:16:26.206 [SessionManager+Reactive.swift:56] API📩|call to: /v1/auth/renew|
+2025-07-26 17:16:26.206 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.330 [UserTokenRequestAdapter.swift:52] API📩|Adapt request with refresh token: isExpired false expireAfter 27320138.67006004|
+2025-07-26 17:16:26.613 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/auth/renew [with value: 200]|
+2025-07-26 17:16:26.671 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.673 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.327386021614|
+2025-07-26 17:16:26.718 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.721 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.278941035271|
+2025-07-26 17:16:26.776 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.778 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.221518993378|
+2025-07-26 17:16:26.826 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.828 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.1719390153885|
+2025-07-26 17:16:26.880 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.882 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.118028044701|
+2025-07-26 17:16:26.918 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.920 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.080373048782|
+2025-07-26 17:16:26.978 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:26.979 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/app-rate?source=macos_dmg [with value: 200]|
+2025-07-26 17:16:26.981 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7199.019492030144|
+2025-07-26 17:16:27.090 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/payment/subscriptions/current [with value: 200]|
+2025-07-26 17:16:27.103 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v2/notification/me [with value: 200]|
+2025-07-26 17:16:27.159 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/account/users/me [with value: 200]|
+2025-07-26 17:16:27.174 [SessionManager+Reactive.swift:56] API📩|call to: /v1/identity/altid/profile|
+2025-07-26 17:16:27.175 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:27.177 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7198.823194026947|
+2025-07-26 17:16:27.241 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/identity/altid/profile [with value: 200]|
+2025-07-26 17:16:27.242 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/notification/authorization [with value: 200]|
+2025-07-26 17:16:27.466 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|
+2025-07-26 17:16:27.484 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/identity/altid/profile [with value: 200]|
+2025-07-26 17:16:40.603 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/feedback/|
+2025-07-26 17:16:40.605 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:16:40.633 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7185.367462038994|
+2025-07-26 17:16:40.634 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|
+2025-07-26 17:19:00.725 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/feedback/|
+2025-07-26 17:19:00.729 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:19:00.778 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7045.221750974655|
+2025-07-26 17:19:00.780 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|
+2025-07-26 17:19:02.313 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/app-rate/01931967-15bf-71cf-9e51-edb1afa72776|
+2025-07-26 17:19:02.317 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:19:02.318 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7043.681861042976|
+2025-07-26 17:19:02.693 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/app-rate/01931967-15bf-71cf-9e51-edb1afa72776 [with value: 200]|
+2025-07-26 17:19:08.374 [SessionManager+Reactive.swift:56] API📩|call to: /v3/server/suggest/bundle|
+2025-07-26 17:19:08.375 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:19:08.377 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7037.623185038567|
+2025-07-26 17:19:08.839 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v3/server/suggest/bundle [with value: 200]|
+2025-07-26 17:19:36.807 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/feedback/|
+2025-07-26 17:19:36.809 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:19:36.845 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 7009.15471804142|
+2025-07-26 17:19:36.847 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|
+2025-07-26 17:55:04.429 [SessionManager+Reactive.swift:56] API📩|call to: /v1/proposal/feedback/|
+2025-07-26 17:55:04.431 [APIHostManager.swift:230] API📩|Adapted to: api.surfshark.com|
+2025-07-26 17:55:04.467 [UserTokenRequestAdapter.swift:54] API📩|Adapt request with regular token: isExpired false expireAfter 4881.532847046852|
+2025-07-26 17:55:04.469 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|
+2025-07-27 17:55:04.469 [SessionManager+Reactive.swift:80] API📩|response from: https://api.surfshark.com/v1/proposal/feedback?source=macos_dmg&visibility=pending-not-noted [with value: 200]|

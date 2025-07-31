@@ -1,0 +1,98 @@
+livedebugging {
+  enabled = true
+}
+
+local.file_match "flight_data" {
+    path_targets = [{"__path__" = "/temp/logs/*.csv"}]
+    sync_period  = "5s"
+}
+ 
+loki.source.file "flight_log_scrape" {
+    targets    = local.file_match.flight_data.targets
+    forward_to = [loki.process.flight_parser.receiver]
+    tail_from_end = true
+}
+
+loki.process "flight_parser" {
+  forward_to = [loki.write.local.receiver]
+
+  // Parse CSV format - assuming first line is headers
+  stage.regex {
+    expression = "^(?P<timestamp>[^,]+),(?P<attitude_time_boot_ms>[^,]*),(?P<attitude_roll>[^,]*),(?P<attitude_pitch>[^,]*),(?P<attitude_yaw>[^,]*),(?P<attitude_rollspeed>[^,]*),(?P<attitude_pitchspeed>[^,]*),(?P<attitude_yawspeed>[^,]*),(?P<vfr_airspeed>[^,]*),(?P<vfr_groundspeed>[^,]*),(?P<vfr_heading>[^,]*),(?P<vfr_throttle>[^,]*),(?P<vfr_alt>[^,]*),(?P<vfr_climb>[^,]*),(?P<wind_direction>[^,]*),(?P<wind_speed>[^,]*),(?P<wind_speed_z>[^,]*),(?P<gps_time_usec>[^,]*),(?P<gps_fix_type>[^,]*),(?P<gps_lat>[^,]*),(?P<gps_lon>[^,]*),(?P<gps_alt>[^,]*),(?P<gps_eph>[^,]*),(?P<gps_epv>[^,]*),(?P<gps_vel>[^,]*),(?P<gps_cog>[^,]*),(?P<gps_satellites_visible>[^,]*),(?P<gps_alt_ellipsoid>[^,]*),(?P<gps_h_acc>[^,]*),(?P<gps_v_acc>[^,]*),(?P<gps_vel_acc>[^,]*),(?P<gps_hdg_acc>[^,]*),(?P<gps_yaw>[^,]*)$"
+  }
+
+  // Skip header line
+  stage.match {
+    selector = `{job="ardupilot_logs"} |~ "^timestamp,"`
+    action   = "drop"
+  }
+
+  // Store numeric values as structured metadata for better performance
+  stage.structured_metadata {
+    values = {
+      // Attitude data
+      attitude_roll      = "attitude_roll",
+      attitude_pitch     = "attitude_pitch", 
+      attitude_yaw       = "attitude_yaw",
+      attitude_rollspeed = "attitude_rollspeed",
+      attitude_pitchspeed = "attitude_pitchspeed",
+      attitude_yawspeed  = "attitude_yawspeed",
+      
+      // VFR HUD data
+      vfr_alt           = "vfr_alt",
+      vfr_airspeed      = "vfr_airspeed",
+      vfr_groundspeed   = "vfr_groundspeed",
+      vfr_heading       = "vfr_heading",
+      vfr_throttle      = "vfr_throttle",
+      vfr_climb         = "vfr_climb",
+      
+      // Wind data
+      wind_direction    = "wind_direction",
+      wind_speed        = "wind_speed",
+      wind_speed_z      = "wind_speed_z",
+      
+      // GPS data
+      gps_lat           = "gps_lat",
+      gps_lon           = "gps_lon",
+      gps_alt           = "gps_alt",
+      gps_fix_type      = "gps_fix_type",
+      gps_satellites_visible = "gps_satellites_visible",
+      gps_vel           = "gps_vel",
+      gps_cog           = "gps_cog",
+      gps_eph           = "gps_eph",
+      gps_epv           = "gps_epv",
+      gps_h_acc         = "gps_h_acc",
+      gps_v_acc         = "gps_v_acc",
+      gps_vel_acc       = "gps_vel_acc",
+      gps_hdg_acc       = "gps_hdg_acc",
+      gps_yaw           = "gps_yaw",
+    }
+  }
+
+  // Add labels for filtering
+  stage.labels {
+    values = {
+      job         = "ardupilot_logs",
+      vehicle_id  = "drone1",
+      source      = "flight_csv",
+    }
+  }
+
+  // Use timestamp from CSV
+  stage.timestamp {
+    source = "timestamp"
+    format = "Unix"
+  }
+
+  // Create a readable log line with key metrics
+  stage.template {
+    source   = "output"
+    template = "Flight Data: Alt={{.vfr_alt}}m, Speed={{.vfr_groundspeed}}m/s, GPS={{.gps_lat}},{{.gps_lon}}, Sats={{.gps_satellites_visible}}"
+  }
+}
+
+loki.write "local" {
+  endpoint {
+    url = "http://loki:3100/loki/api/v1/push"
+  }
+}
